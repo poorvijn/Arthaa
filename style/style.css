@@ -1,0 +1,58 @@
+/* GENERAL STYLES */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* HEADER */
+#header
+{
+    display: block;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+    position: sticky;
+    top:0;
+}
+
+/* TRANSLATION AREA */
+#translateContainer
+{
+    height: 80vh;
+}
+
+/* FOOTER */
+#footer
+{
+    display: block;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+    position: sticky;
+    bottom:0;
+}
+
+#footerLinkSpan
+{
+    white-space: nowrap;
+}
+
+#footerLink
+{
+    color:white;
+}
+
+#footerLink:hover, #footerLink:active
+{
+    opacity:0.8;
+}
