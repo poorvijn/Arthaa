@@ -23,6 +23,11 @@
     top:0;
 }
 
+#header__span
+{
+    white-space: nowrap;
+}
+
 /* TRANSLATION AREA */
 #translateContainer
 {
@@ -42,17 +47,17 @@
     bottom:0;
 }
 
-#footerLinkSpan
+#footer__span
 {
     white-space: nowrap;
 }
 
-#footerLink
+#footer__link
 {
     color:white;
 }
 
-#footerLink:hover, #footerLink:active
+#footer__link:hover, #footer__link:active
 {
     opacity:0.8;
 }
