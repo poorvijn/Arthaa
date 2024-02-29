@@ -31,7 +31,7 @@
 /* TRANSLATION AREA */
 #translateContainer
 {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -42,19 +42,21 @@
 /* INPUT DIV */
 #inputText
 {
-    height: 400px;
-    width: 400px;
     border: 3px solid black;
-    border-radius: 30px;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1rem;
+    padding: 1%;
 }
 
 /* OUTPUT DIV */
 #outputText
 {
-    height: 400px;
-    width: 400px;
     border: 3px solid black;
-    border-radius: 30px;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1rem;
+    padding: 1%;
 }
 
 /* FOOTER */
@@ -83,56 +85,4 @@
 #footer__link:hover, #footer__link:active
 {
     opacity:0.8;
-}
-
-/* MEDIA QUERIES */
-
-/* SMALL */
-@media screen and (max-width:575px)
-{
-    #inputText,#outputText
-    {
-        height: 40%;
-        width: 65%;
-    }
-}
-
-@media screen and (min-width:576px)
-{
-    #inputText,#outputText
-    {
-        height: 40%;
-        width: 65%;
-    }
-}
-
-/* MEDIUM */
-@media screen and (min-width:768px)
-{
-    #inputText,#outputText
-    {
-        height: 40%;
-        width: 65%;
-    }
-}
-
-/* LARGE */
-@media screen and (min-width:992px)
-{
-    #inputText,#outputText
-    {
-        height: 40%;
-        width: 55%;
-        border-radius: 40px;
-    }
-}
-
-@media screen and (min-width:1200px)
-{
-    #inputText,#outputText
-    {
-        height: 60%;
-        width: 35%;
-        border-radius: 40px;
-    }
 }
