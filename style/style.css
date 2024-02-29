@@ -32,6 +32,29 @@
 #translateContainer
 {
     height: 80vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+/* INPUT DIV */
+#inputText
+{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+/* OUTPUT DIV */
+#outputText
+{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 30px;
 }
 
 /* FOOTER */
@@ -60,4 +83,73 @@
 #footer__link:hover, #footer__link:active
 {
     opacity:0.8;
+}
+
+/* MEDIA QUERIES */
+
+/* SMALL */
+@media screen and (max-width:575px)
+{
+    #translateContainer{
+        height: 80vh;
+    }
+    #inputText,#outputText
+    {
+        height: 40%;
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:576px)
+{
+    #translateContainer{
+        height: 80vh;
+    }
+    #inputText,#outputText
+    {
+        height: 40%;
+        width: 65%;
+    }
+}
+
+/* MEDIUM */
+@media screen and (min-width:768px)
+{
+    #translateContainer{
+        height: 80vh;
+    }
+    #inputText,#outputText
+    {
+        height: 40%;
+        width: 65%;
+    }
+}
+
+/* LARGE */
+@media screen and (min-width:992px)
+{
+    #translateContainer{
+        height: 110vh;
+    }
+    #inputText,#outputText
+    {
+        height: 40%;
+        width: 65%;
+        border: 3px solid black;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    #translateContainer{
+        height: 85vh;
+    }
+    #inputText,#outputText
+    {
+        height: 60%;
+        width: 35%;
+        border: 3px solid black;
+        border-radius: 40px;
+    }
 }
