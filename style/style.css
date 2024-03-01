@@ -10,6 +10,11 @@
     font-style: normal;
   }
 
+/* BODY */
+body{
+    min-height: 100vh;
+}
+
 /* HEADER */
 #header
 {
@@ -28,10 +33,38 @@
     white-space: nowrap;
 }
 
+/* BUTTONS */
+button{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 3px;
+    text-align: center;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+#clearButton
+{
+    position: absolute;
+    top:20%;
+    left: 4%;
+}
+#translateButton
+{
+    position: absolute;
+    right: 4%;
+    top: 20%;
+}
+
 /* TRANSLATION AREA */
 #translateContainer
 {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
