@@ -40,7 +40,7 @@ button{
     background-color: black;
     color: white;
     padding: 1rem;
-    border-radius: 3px;
+    border-radius: 4px;
     text-align: center;
 }
 
@@ -54,6 +54,7 @@ button:hover{
     top:20%;
     left: 4%;
 }
+
 #translateButton
 {
     position: absolute;
@@ -90,6 +91,20 @@ button:hover{
     resize: vertical;
     font-size: 1rem;
     padding: 1%;
+}
+
+/* INPUT TARGET LANGUAGE */
+#outputLanguage{
+    display: inline-block;
+    position: absolute;
+    top: 21.1%;
+    right: 28.5%;
+    height: 40px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 2px;
+    font-size: 1rem;
 }
 
 /* FOOTER */
