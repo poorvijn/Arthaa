@@ -58,8 +58,33 @@ button:hover{
 #translateButton
 {
     position: absolute;
-    right: 4%;
     top: 20%;
+    right: 4%;
+}
+
+/* INPUT BOXES */
+#inputLanguage,#outputLanguage{
+    display: inline-block;
+    height: 40px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 2px;
+    font-size: 1rem;
+}
+
+#inputLanguage
+{
+    position: absolute;
+    top: 20.8%;
+    left: 28.5%;
+}
+
+#outputLanguage
+{
+    position: absolute;
+    top: 20.8%;
+    right: 28.5%;  
 }
 
 /* TRANSLATION AREA */
@@ -91,20 +116,6 @@ button:hover{
     resize: vertical;
     font-size: 1rem;
     padding: 1%;
-}
-
-/* INPUT TARGET LANGUAGE */
-#outputLanguage{
-    display: inline-block;
-    position: absolute;
-    top: 21.1%;
-    right: 28.5%;
-    height: 40px;
-    width: 250px;
-    border: 2px solid black;
-    border-radius: 3px;
-    padding: 2px;
-    font-size: 1rem;
 }
 
 /* FOOTER */
