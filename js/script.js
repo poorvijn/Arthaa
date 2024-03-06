@@ -151,8 +151,8 @@ translateBtn.addEventListener('click',()=>{
 			method: 'POST',
 			headers: {
 				'content-type': 'application/x-www-form-urlencoded',
-				'X-RapidAPI-Key': 'e360d6d83cmshb89ad2fd9c53591p1a2634jsn292ca281e0c5',
-				'X-RapidAPI-Host': 'nlp-translation.p.rapidapi.com'
+				'X-RapidAPI-Key': API_KEY,
+				'X-RapidAPI-Host': API_HOST
 			},
 			body: new URLSearchParams({
 				text: text,
