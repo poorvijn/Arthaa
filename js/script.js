@@ -136,13 +136,16 @@ translateBtn.addEventListener('click',()=>{
 	outputTextBox.value="";
 	let inputLanguage = inputLangBox.value;
 	let targetLanguage = targetLangBox.value;
+	// if both languages are supported
 	if(supportedLanguages[inputLanguage] && supportedLanguages[targetLanguage])
 	{
 		inputLangBox.style.color="green";
 		targetLangBox.style.color="green";
+		// get their short forms from the object supportedLanguages
 		let inputLangShort = supportedLanguages[inputLanguage];
 		let targetLangShort = supportedLanguages[targetLanguage];
 		let text = inputTextBox.value;
+		// API Parameters
 		const url = 'https://nlp-translation.p.rapidapi.com/v1/translate';
 		const options = {
 			method: 'POST',
@@ -157,7 +160,7 @@ translateBtn.addEventListener('click',()=>{
 				from: inputLangShort
 			})
 		};
-				
+		// API CALL
 		try {
 			const response = fetch(url, options);
 			response.then((response)=>{
@@ -177,6 +180,7 @@ translateBtn.addEventListener('click',()=>{
 	}
 	else
 	{
+		// Determine which language is not supported, and change text to red
 		if(!supportedLanguages[inputLanguage])
 			inputLangBox.style.color = "red";
 		else
