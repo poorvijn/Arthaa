@@ -3,7 +3,7 @@ Arthaa is a text translator that uses the [NLP translation](https://rapidapi.com
 It provides a simple User Interface to interact with the API.  
 
 ## Tech Stack:  
-* HTNL
+* HTML
 * CSS
 * Vanilla JavaScript  
 
