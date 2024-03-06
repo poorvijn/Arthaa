@@ -136,6 +136,11 @@ translateBtn.addEventListener('click',()=>{
 	outputTextBox.value="";
 	let inputLanguage = inputLangBox.value;
 	let targetLanguage = targetLangBox.value;
+	// Capitalize first letter of both language inputs, to match with property of supportedLanguages
+	// object
+	inputLanguage=inputLanguage.charAt(0).toUpperCase()+inputLanguage.slice(1,inputLanguage.length);
+	targetLanguage=targetLanguage.charAt(0).toUpperCase()+targetLanguage.slice(1,targetLanguage.length);
+
 	// if both languages are supported
 	if(supportedLanguages[inputLanguage] && supportedLanguages[targetLanguage])
 	{
