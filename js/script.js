@@ -169,14 +169,21 @@ translateBtn.addEventListener('click',()=>{
 		try {
 			const response = fetch(url, options);
 			response.then((response)=>{
+				// converts the received response stream to a text/string object
 				let result = response.text();
 				return result;
 			}).then((result)=>{
+				// converting result object to a string format for easier access to translated text
 				let stringifiedResult = result.toString();
+				// splitting components of the string with delimiter :
 				let wordSplit = result.split(":");
+				// accessing index 6 of the components stored in the array wordSplit, which includes the translated portion of the response, and splitting it to separate the translated words from the rest of the string component
 				let translatedWords = wordSplit[6].split("}");
-				let exactTranslation = translatedWords[0].slice(0,translatedWords[0].length-1);
+				// Accessing the translated string which is at the 0th index
+				let exactTranslation = translatedWords[0];
+				// Splitting using delimiter " to remove the extra quotes due to conversion of result object to string
 				let destringified = exactTranslation.split("\"");
+				// Setting output to the second element, which is the translated text
 				outputTextBox.value=destringified[1];
 			});
 		} catch (error) {
